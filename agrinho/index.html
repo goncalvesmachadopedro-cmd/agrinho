@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico AgroSustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Diagnóstico de Sustentabilidade Rural</h1>
+        <p>Responda às perguntas abaixo para avaliar o nível sustentável da sua propriedade.</p>
+        
+        <form id="quiz-form">
+            <div class="question">
+                <label for="agua">1. Como é feita a gestão da água na propriedade?</label>
+                <select id="agua" required>
+                    <option value="">Selecione...</option>
+                    <option value="3">Uso irrigação por gotejamento e captação de chuva.</option>
+                    <option value="2">Uso irrigação convencional sem controle rigoroso.</option>
+                    <option value="1">Não tenho controle ou monitoramento do uso da água.</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label for="solo">2. Qual prática de manejo do solo é adotada?</label>
+                <select id="solo" required>
+                    <option value="">Selecione...</option>
+                    <option value="3">Plantio direto e rotação de culturas.</option>
+                    <option value="2">Apenas rotação de culturas ocasional.</option>
+                    <option value="1">Aração convencional contínua (solo descoberto).</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label for="defensivos">3. Como é o manejo de pragas e defensivos?</label>
+                <select id="defensivos" required>
+                    <option value="">Selecione...</option>
+                    <option value="3">Uso prioritário de controle biológico e manejo integrado (MIP).</option>
+                    <option value="2">Uso defensivos químicos apenas quando o dano é visível.</option>
+                    <option value="1">Aplicação de defensivos químicos de forma calendarizada (preventiva).</option>
+                </select>
+            </div>
+
+            <button type="button" onclick="calcularDiagnostico()">Gerar Diagnóstico</button>
+        </form>
